@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover{
+    opacity: 1.5;
+}
+
+.logo{
+    user-select: none;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #96191C;
+    height: 10vh;
+}
+
+main{
+    background: url("./imagens/jb.logo.jpg") 
+    no-repeat center center;
+    background-size: cover;
+    height: 90vh;
+}
+
+.nav-list{
+    height: 8vh;
+    text-align: center;
+    list-style: none;
+    display: flex;
+    color: #fff;
+}
+
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.nav-list li:hover{
+    transition-duration: 0.5s;
+    letter-spacing: 3px;
+    margin-left: 32px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+    /*padding-top: 40vh;*/
+    color: #fff;
+    user-select: none;
+    position:relative;
+    width: 100%;
+    height: 12%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(105, 105, 105, 0.7);
+}
+
+
+@media (max-width: 790px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .nav-list{
+        position: absolute;
+        top: 10vh;
+        right: 0;
+        width: 50vw;
+        height: 90vh;
+        background: #96191C;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+
+    .nav-list li{
+        margin-left: 0;
+        opacity: 0;
+        width: 40vh;
+        height: 10vh;
+        padding-top: 6vh;
+        user-select: none;
+    }
+
+    .nav-list li:hover{
+        margin-left: 0;
+        opacity: 0;
+        width: 40vh;
+        height: 10vh;
+        padding-top: 6vh;
+        background-color: #b12528;
+        border-radius: 8px;
+        user-select: none;
+    }
+
+    .mobile-menu{
+        display: block;
+        padding-right: 13vh;
+    }
+
+    .nav-list.active{
+        transform: translateX(0);
+    }
+
+    @keyframes navLinkFade{
+        from{
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    .mobile-menu.active .line1{
+        transform: rotate(-45deg) translate(-8px, 8px);
+    }
+
+    .mobile-menu.active .line2{
+        opacity: 0;
+
+    }
+    .mobile-menu.active .line3{
+        transform: rotate(45deg) translate(-5px, -7px);
+    }
+
+    #description{
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        width: 100%;
+        height: 50vh;
+    }
+
+    #description p{
+        background-color: black;
+        color: #fff;
+        text-align: justify;
+        width: 100%;
+    }
+
+    .h1{
+        padding: 10vh;
+    }
+
+    .mod-cont{
+        background-color: #96191C;
+        width: 100%;
+        height: auto;
+        color: #fff;
+        padding: 3%;
+    }
+
+    .top-form h3{
+        text-align: center;
+        padding-top: 2vh;
+    }
+
+    .nss-cont li{
+        list-style: none;
+        padding-top: 2vh;
+    }
+
+    .nss-cont h3{
+        padding-top: 2vh;
+    }
+
+    .form{
+        padding: 2vh, 2vh, 2vh;
+    }
+
+    .info-form{
+        padding-top: 2vh;
+        width: 90%;    
+        height:fit-content;
+        display: block;
+    }
+
+    #nome, #email, #numero{
+        width: 100%;
+        padding-top: 0.5vh;
+    }
+
+
+}
+
+#cardapio{
+    box-shadow: 2px 2px 4px black;
+    overflow: hidden;
+}
+
+.container{
+    font-display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+img{
+    object-fit: cover;
+    width: 25vh;
+    height: 25vh;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pão do trigo</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="logo" href="/" >P. Pão do trigo</a>
+
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+
+            <ul class="nav-list">
+                <li><a href="/"></a>Home</li>
+                <li><a href="#description"></a>Sobre nós</li>
+                <li><a href="#cardapio"></a>Delivery</li>
+                <li><a href="/"></a>Cardápio</li>
+                <li><a href="/"></a>Contato</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="center">
+        <h2>Panificadora Pão do Trigo</h2>
+        <h3>Pão não, ouro!</h3>
+        </div>
+    </main>
+    <script src="mobile_navbar.js"></script>
+    <script src="cardapio.js" defer></script>
+
+    <div id="description">
+        <div class="h1"><h2>Panificadora pão do trigo</h2></div>
+
+        <p>&nbsp &nbsp &nbsp Na cidade de Craíbas existem vários ícones, mas, com certeza, um dos melhores, seja durante o dia ou à noite, é a Panificadora Pão do Trigo.<br>
+        &nbsp &nbsp &nbspReferência na confecção de pães, bolos, lanches, salgados. Tudo o que você precisa num só lugar.</p>
+    </div>
+
+    <div id="delivery">
+        <div class="cafe">
+            <h2>Delivery</h2>
+
+            <p>Agora, com nosso novo sitema de entrega, seus produtos chegam na sua casa sem o menor problema, quentinho e rápido. Do jeitinho que você gosta</p>
+        </div>
+    </div>
+
+    <div id="cardapio" id="img">
+        <div class="container">
+            <img src="./imagens/bolos.jpg" alt="">
+            <img src="./imagens/coxinhas.jpg" alt="">
+            <img src="./imagens/paes.jpg" alt="">
+            <img src="./imagens/pastel.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="mod-cont">
+
+        <div class="top-form">
+            <h3>Quer nos contar algo?</h3>
+        </div>
+
+        <div class="contato">
+            <ul class="nss-cont">
+                <h3>Entre em contato!</h3>
+                <li><a href="/"></a><b>Instagram:</b></li>
+                <p>@pan_paodotrigo.</p>
+                <li><a href=""></a><b>WhattsApp:</b></li>
+                <p>(82)&nbsp99826-2441;<br>
+                   (82)&nbsp99668-3856.</p>
+                <li><b>E-mail:</b></li>
+                <p>pan_paodotrigo@gmail.com.</p>
+            </ul>
+        </div>
+    
+        <div class="form">
+
+            <div class="top-form">
+                <h3>Ou nos mande um email: </h3>
+            </div>
+    
+            <div class="info-form">
+                <div id="nome">
+                    <label for="nome" class="nome">Nome:</label>
+                    <input type="text" class="nome1" id="nome" required placeholder="Seu nome...">
+                </div>
+        
+                <div id="email">
+                    <label for="email" class="email">Email:</label>
+                    <input type="text" class="email1" id="email" required placeholder="Seu email...">
+                </div>
+
+                <div id="numero">
+                    <label for="numero" class="numero">Numero:</label>
+                    <input type="text" class="numero1" id="numero" required placeholder="Seu número...">
+                </div>
+            </div>
+    
+            <div class="text-form">
+                <div id="text">
+                    <label for="exampleFormControlTextarea1" class="form-label">Alguma sujestão? Nos escreva!</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" required></textarea>
+                </div>
+            </div>
+
+            <input type="submit" value="Enviar" />
+        </div> 
+    </div>
+</body>
+</htm>
